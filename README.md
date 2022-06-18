@@ -1,5 +1,10 @@
 https://user-images.githubusercontent.com/98120553/174451601-99fa0b00-0c88-49c8-a164-3f9f63f871ab.mp4 
 
+https://user-images.githubusercontent.com/98120553/174451603-ad0329fe-9ac6-47d0-8dfa-5189d3218284.mp4
+
+https://user-images.githubusercontent.com/98120553/174451968-65e8a0c0-3216-4364-a444-a4f0521203e7.mp4
+
+
 # 18 NoSQL: Social Network API
 
 MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. Over the last part of this course, you’ll use several of the technologies that social networking platforms use in their full-stack applications. Because the foundation of these applications is data, it’s important that you understand how to build and structure the API first.
