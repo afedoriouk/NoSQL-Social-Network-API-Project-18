@@ -7,9 +7,17 @@ Your challenge is to build an API for a social network using Express.js for rout
 Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
 
 
+
+https://user-images.githubusercontent.com/98120553/174451601-99fa0b00-0c88-49c8-a164-3f9f63f871ab.mp4
+https://user-images.githubusercontent.com/98120553/174451603-ad0329fe-9ac6-47d0-8dfa-5189d3218284.mp4
+
 ## User Story
 
 ```md
+
+
+
+
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
