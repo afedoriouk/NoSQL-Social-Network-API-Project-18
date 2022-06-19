@@ -19,7 +19,7 @@ Many social media applications use multiple pages which are constantly updated. 
 
 ## Technologies
 
-Social Network API is an important project which explores many technologies and implements MongoDB database, and the Mongoose ODM. On addition this API for social network is using Express.js for routing. MongoDB is a source-available cross-platform document-oriented database program which was introduced to the developers in 2009. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. In the last decade MongoDB becomes a popular choice for many websites including social network Applications. MongoDB offers fast connectivity and processing of large amounts of data as well as the flexibility with unstructured data. 
+Social Network API is an important project which explores many technologies and implements MongoDB database, and the Mongoose ODM. On addition this API for social network is using Express.js for routing. MongoDB is a source-available cross-platform document-oriented database program which was introduced to the developers in 2009. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. In the last decade MongoDB becomes a popular choice for many websites including social network applications. MongoDB offers fast connectivity and processing of large amounts of data as well as the flexibility with unstructured data. 
 
 [Express](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose)
 
