@@ -9,9 +9,18 @@ https://user-images.githubusercontent.com/98120553/174495911-cae7ccf2-2c15-4d1d-
 https://user-images.githubusercontent.com/98120553/174496727-e5d92daf-0faa-461d-bd87-d17c8944fcbd.mp4
 
 
+## NoSQL-Social-Network-API-Project-18
+
+The above video examples show the application's API POST and DELETE routes for reactions to thoughts being tested in Insomnia.
 
 
-# NoSQL-Social-Network-API-Project-18
+## User Story
+
+Many social media apllications use dynamicly upaded pages. </br> New Social Media startup is looking for the solution to develop an application capable of handling large number data which is dynamicaly updated on the multiple pages accros the platform. </br>
+The projects requires a use of a data base with Express.js. Express.js is a back end web application framework for Node.js. </br>
+It was released in 2010 as free and open-source software under the MIT License. This framework would be a great combination with the MongoDB to develop this social media apllications.
+
+## Technologies
 
 Social Network API is an important project which explores many technologies and implements MongoDB database, and the Mongoose ODM. On addition this API for social network is using Express.js for routing.</br>
 MongoDB is a source-available cross-platform document-oriented database program which was introduced to the developers in 2009. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. In the last decade MongoDB becames a popular choice for many websites including social network Applications. MongoDB offers fast connectivity and processing of large amounts of data as well as the flexibility with unstructured data. 
@@ -19,33 +28,7 @@ MongoDB is a source-available cross-platform document-oriented database program 
 [Express](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose)
 
  </br>
-https://user-images.githubusercontent.com/98120553/174451603-ad0329fe-9ac6-47d0-8dfa-5189d3218284.mp4
 
-## User Story
-
-```
-Many social media apllications use dynamicly upaded pages. New Social Media startup is looking for the solution to develop an application capable of handling large number data which is dynamicaly updated on the multiple pages accros the platform. The projects requires a use of a data base with Express.js. Express.js is a back end web application framework for Node.js. It was released in 2010 as free and open-source software under the MIT License. This framework would be a great combination with the MongoDB to develop this social media apllications.
-```
-
-
-## Acceptance Criteria
-
-```md
-GIVEN a social network API
-WHEN I enter the command to invoke the application
-THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete users and thoughts in my database
-WHEN I test API POST and DELETE routes in Insomnia
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
-```
-
-
-## Mock-Up
-
-The following video examples show the application's API POST and DELETE routes for reactions to thoughts being tested in Insomnia.
 
 ### Models
 
@@ -69,8 +52,6 @@ The following video examples show the application's API POST and DELETE routes f
 * `friends`
     * Array of `_id` values referencing the `User` model (self-reference)
 
-**Schema Settings**
-
 **Thought**
 
 * `thoughtText`
@@ -90,11 +71,6 @@ The following video examples show the application's API POST and DELETE routes f
 * `reactions` (like replies)
     * Array of nested documents created with the `reactionSchema`
 
-**Schema Settings**
-
-**Reaction** (SCHEMA ONLY)
-
-**Schema Settings**
 
 ### API Routes
 
