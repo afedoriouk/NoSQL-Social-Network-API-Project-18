@@ -13,17 +13,13 @@ https://user-images.githubusercontent.com/98120553/174496727-e5d92daf-0faa-461d-
 
 The above video examples show the application's API POST and DELETE routes for reactions to thoughts being tested in Insomnia.
 
-
 ## User Story
 
-Many social media apllications use dynamicly upaded pages. </br> New Social Media startup is looking for the solution to develop an application capable of handling large number data which is dynamicaly updated on the multiple pages accros the platform. </br>
-The projects requires a use of a data base with Express.js. Express.js is a back end web application framework for Node.js. </br>
-It was released in 2010 as free and open-source software under the MIT License. This framework would be a great combination with the MongoDB to develop this social media apllications.
+Many social media applications use multiple pages which are constantly updated. New Social Media startup is looking for the solution to develop an application capable of handling large number data which is dynamically updated on the multiple pages across the platform. The projects requires a use of a data base with Express.js. Express.js is a back end web application framework for Node.js.  It was released in 2010 as free and open-source software under the MIT License. This framework would be a great combination with the MongoDB to develop this social media apllications.
 
 ## Technologies
 
-Social Network API is an important project which explores many technologies and implements MongoDB database, and the Mongoose ODM. On addition this API for social network is using Express.js for routing.</br>
-MongoDB is a source-available cross-platform document-oriented database program which was introduced to the developers in 2009. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. In the last decade MongoDB becames a popular choice for many websites including social network Applications. MongoDB offers fast connectivity and processing of large amounts of data as well as the flexibility with unstructured data. 
+Social Network API is an important project which explores many technologies and implements MongoDB database, and the Mongoose ODM. On addition this API for social network is using Express.js for routing. MongoDB is a source-available cross-platform document-oriented database program which was introduced to the developers in 2009. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. In the last decade MongoDB becomes a popular choice for many websites including social network Applications. MongoDB offers fast connectivity and processing of large amounts of data as well as the flexibility with unstructured data. 
 
 [Express](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose)
 
@@ -39,47 +35,36 @@ MongoDB is a source-available cross-platform document-oriented database program 
     * Unique
     * Required
     * Trimmed
-
 * `email`
     * String
     * Required
     * Unique
     * Must match a valid email address (look into Mongoose's matching validation)
-
 * `thoughts`
     * Array of `_id` values referencing the `Thought` model
-
 * `friends`
     * Array of `_id` values referencing the `User` model (self-reference)
 
 **Thought**
-
 * `thoughtText`
     * String
     * Required
     * Must be between 1 and 280 characters
-
 * `createdAt`
     * Date
     * Set default value to the current timestamp
     * Use a getter method to format the timestamp on query
-
 * `username` - Which user created this thought
     * String
     * Required
-
 * `reactions` (like replies)
     * Array of nested documents created with the `reactionSchema`
-
 
 ### API Routes
 
 **`/api/users`**
-
 **`/api/users/:userId/friends/:friendId`**
-
 **`/api/thoughts`**
-
 **`/api/thoughts/:thoughtId/reactions`**
 
 ## Sources
