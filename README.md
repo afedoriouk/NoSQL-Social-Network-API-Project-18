@@ -58,21 +58,19 @@ The following animations show examples of the application's API routes being tes
 
 The first animation shows GET routes to return all users and all thoughts being tested in Insomnia:
 
-![Homework Demo 01](./Assets/18-nosql-homework-demo-01.gif)
 
 The second animation shows GET routes to return a single user and a single thought being tested in Insomnia:
 
-![Homework Demo 02](./Assets/18-nosql-homework-demo-02.gif)
+
 
 The third animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
 
-![Homework Demo 03](./Assets/18-nosql-homework-demo-03.gif)
+
 
 Your walkthrough video should also show the POST, PUT, and DELETE routes for thoughts being tested in Insomnia.
 
 The final animation shows the POST and DELETE routes for a user’s friend list being tested in Insomnia:
 
-![Homework Demo 04](./Assets/18-nosql-homework-demo-04.gif)
 
 Your walkthrough video should also show the POST and DELETE routes for reactions to thoughts being tested in Insomnia.
 
@@ -222,13 +220,6 @@ This will not be a model, but rather used as the `reaction` field's subdocument 
 
 * `DELETE` to pull and remove a reaction by the reaction's `reactionId` value
 
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Sources
+Google Search </br>
+Screencastify Chrome Browser Extension </br>
