@@ -98,6 +98,7 @@ addToFriendList({ params }, res);
         res.status(404).json({ message: "No user with this id!" });
         return;
       }
+<<<<<<< HEAD
       res.json(dbUserData);
     })
     .catch((err) => {
@@ -107,6 +108,39 @@ addToFriendList({ params }, res);
 }
 
 // remove friend from friend list
+=======
+    )
+      .then((dbUserData) => {
+        if (!dbUserData) {
+          return res.status(404).json({ message: 'No user with this id!' });
+        }
+        res.json(dbUserData);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
+  // delete user (BONUS: and delete associated thoughts)
+  // deleteUser(req, res) {
+  //   User.findOneAndDelete({ _id: req.params.userId })
+  //     .then((dbUserData) => {
+  //       if (!dbUserData) {
+  //         return res.status(404).json({ message: 'No user with this id!' });
+  //       }
+
+  //       // BONUS: get ids of user's `thoughts` and delete them all
+  //       return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
+  //     })
+  //     .then(() => {
+  //       res.json({ message: 'User and associated thoughts deleted!' });
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       res.status(500).json(err);
+  //     });
+  // },
+>>>>>>> b7380602f14ab4f6469ff2c8eb9b846fd8ab68fe
 
 deleteFriend({ params }, res);
 {
