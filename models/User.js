@@ -1,28 +1,27 @@
+// const require ("mongoose")
+
 const { Schema, model } = require('mongoose');
 
-const userSchema = new Schema(
+const userSchema = new mongoose.Schema(
   {
     username: {
       type: String,
       required: true,
       unique: true,
-      trim: true,
+      min: 3,
+      max:30
     },
     email: {
       type: String,
       required: true,
       unique: true,
-      match: [/.+@.+\..+/, 'Must match an email address!'],
+      max:60
     },
-    thoughts: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Thought',
-      },
-    ],
+    
     friends: [
       {
-        type: Schema.Types.ObjectId,
+        type: Array,
+        default:[],
         ref: 'User',
       },
     ],
@@ -35,10 +34,10 @@ const userSchema = new Schema(
   }
 );
 
-userSchema.virtual('friendCount').get(function () {
+userSchema('friendCount').get(function () {
   return this.friends.length;
 });
 
-const User = model('User', userSchema);
 
-module.exports = User;
+
+module.exports = mongoode.model("User", userSchema);

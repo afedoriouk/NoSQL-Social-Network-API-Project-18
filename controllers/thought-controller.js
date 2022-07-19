@@ -18,7 +18,7 @@ const thoughtController = {
   getThoughtById({
     params }, res) {
     Thought.findOne({ _id: params.id })
-      .select('_v')
+      .select('-__v')
       .sort({
         _id: -1
       })

@@ -3,8 +3,9 @@ const dateFormat = require('../utils/dateFormat');
 
 const reactionSchema = new Schema(
   {
-    reactionId: {
+    reactionId: {       //Mongoose's ObjectId data type
       type: Schema.Types.ObjectId,
+      //Need to set default value to a new ObjectId
       default: () => new Types.ObjectId()
     },
     reactionBody: {
