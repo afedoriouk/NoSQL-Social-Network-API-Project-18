@@ -10,13 +10,27 @@ constUser = require("../models/User")
 router.post("sign up", async (req,res)=>{
 
     const user = await new User({
-        username:"Alex",
-        email:"alex@gmail.com",
-        password:"987654"
-    })
+        username:req.body,username,
+        email:req.body.email,
+        password:req.body.password,
+    });
     await user.save();
     res.send("registered")
 })
+
+try{
+    const user = await newUser.save();
+    res.status(200).json(user);
+
+
+
+}catch(err){
+    console.log(err)
+
+
+}
+
+
 router.get("/", (req, res)=>{
     res.send("this is auth route")
 })
