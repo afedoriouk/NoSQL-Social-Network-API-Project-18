@@ -70,3 +70,9 @@ Social Network API is an important project which explores many technologies and 
 ## Sources
 Google Search </br>
 Screencastify Chrome Browser Extension </br>
+
+
+## Use
+Created Collections using MongoDB Compass
+Deployed Database using cloud.mongodb
+Screenshots in Assets folder
