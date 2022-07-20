@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const PostSchema = new mongoose.Schema(
     {
         userId:{
@@ -7,7 +8,7 @@ const PostSchema = new mongoose.Schema(
         },
         description:{
             type:String,
-            max:130,
+            max:300,
         },
         createdAt: {
             type: Date,

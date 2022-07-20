@@ -16,19 +16,15 @@ const thoughtController = {
   },
   // get single thought by id
   
-
-
   // create thought
-  
 
   // update thought by using ID
   
   // delete thought
 
 
-        // remove thought id from user's `thoughts` field
+ // remove thought id from user's `thoughts` field
    
-
   // create reaction
 
 
