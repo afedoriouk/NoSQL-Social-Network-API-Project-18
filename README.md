@@ -60,12 +60,11 @@ Social Network API is an important project which explores many technologies and 
 * `reactions` (like replies)
     * Array of nested documents created with the `reactionSchema`
 
-### API Routes
+### Routes
 
 **`/api/users`**
-**`/api/users/:userId/friends/:friendId`**
-**`/api/thoughts`**
-**`/api/thoughts/:thoughtId/reactions`**
+**`/api/posts/**
+
 
 ## Sources
 Google Search </br>
