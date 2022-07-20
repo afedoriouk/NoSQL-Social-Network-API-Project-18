@@ -37,16 +37,30 @@ router.delete("/:id", async(req,res)=>{
 router.get("/:id", async (req,res)=>{
     try{
         const user = User.findUserById(req.params.id);
-
-        res.status(200).json(user);
+res.status(200).json(user);
 
     } catch (err){
         res.status(500).json(err);
 
     }
 });
+
+//delete user using delete method
+
+
 //update user
-//delete user
+router.put("/:id", async(req,res)=>{
+if (req.body.userId===req.params.id){
+    try{
+        await User.findUserByIdAndUpdate(req.params.id);
+        res.status(200).json("Your account has been updated")
+    }catch (err){
+        res.status(403).json(err);
+    }
+}
+})
+
+
 //add a Friend
 router.put("/:id/addFriend", async (req,res)=>{
     if (req.body.userId !== req.params.id){
