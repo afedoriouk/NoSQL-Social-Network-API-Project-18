@@ -5,8 +5,8 @@ const {getUsers} = require('../../controllers/user-controller'),
 const {getSingleUser} = require('../../controllers/user-controller'),
 const {createUser} = require('../../controllers/user-controller'),
 const {updateUser} = require('../../controllers/user-controller'),
-const  {deleteUser} = require('../../controllers/user-controller'),
-const  {addFriend} = require('../../controllers/user-controller'),
+const {deleteUser} = require('../../controllers/user-controller'),
+const {addFriend} = require('../../controllers/user-controller'),
 const {removeFriend} = require('../../controllers/user-controller'),
 
 const User = require('../models/User');
@@ -70,18 +70,18 @@ await currentUser.updateUser({push:{addFriend:req.body.userId}});
 
 
 // /api/users
-router.get("/", (req, res)=>{
-    res.send("this is user route")
-})
+// router.get("/", (req, res)=>{
+//     res.send("this is user route")
+// })
 
 
-router.route('/').get(getUsers).post(createUser);
+// router.route('/').get(getUsers).post(createUser);
 
 // /api/users/:userId
-router.route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
+// router.route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
 
 // /api/users/:userId/friends/:friendId
-router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend);
+// router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend);
 
 
 
