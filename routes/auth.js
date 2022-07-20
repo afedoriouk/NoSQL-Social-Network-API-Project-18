@@ -25,7 +25,6 @@ try{
     const user = await newUser.save();
     res.status(200).json(user);
 
-
 }catch(err){
     console.log(err)
 
@@ -36,7 +35,15 @@ try{
 router.get("/", (req, res)=>{
     res.send("this is auth route")
 })
-
+//Login In 
+router.post("login", async(req,res)=>{
+    try{
+        const user = await User.findOne({email:req.body.email});
+        !user && res.status(404).json("try again");
+    }catch (err){
+        console.log(err);
+    }
+});
 
 
 module.export = router
