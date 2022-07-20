@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema(
       {
         type: Array,
         default:[],
-        ref: 'User',
+        reference: 'User',
       },
     ],
   },
@@ -35,9 +35,7 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-userSchema('friendCount').get(function () {
-  return this.friends.length;
-});
+// userSchema('friendCount').get(function () { return this.friends.length;});
 
 
 
