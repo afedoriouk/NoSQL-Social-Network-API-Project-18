@@ -1,13 +1,13 @@
 const router = require('express').Router();
 const router = require("../model/User")
 
-const {getUsers} = require('../../controllers/user-controller'),
-const {getSingleUser} = require('../../controllers/user-controller'),
-const {createUser} = require('../../controllers/user-controller'),
-const {updateUser} = require('../../controllers/user-controller'),
-const {deleteUser} = require('../../controllers/user-controller'),
-const {addFriend} = require('../../controllers/user-controller'),
-const {removeFriend} = require('../../controllers/user-controller'),
+const {getUsers} = require('../../controllers/user-controller');
+const {getSingleUser} = require('../../controllers/user-controller');
+const {createUser} = require('../../controllers/user-controller');
+const {updateUser} = require('../../controllers/user-controller');
+const {deleteUser} = require('../../controllers/user-controller');
+const {addFriend} = require('../../controllers/user-controller');
+const {removeFriend} = require('../../controllers/user-controller');
 
 const User = require('../models/User');
 
