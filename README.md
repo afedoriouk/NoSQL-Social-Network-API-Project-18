@@ -63,7 +63,7 @@ Social Network API is an important project which explores many technologies and 
 ### Routes
 
 **`/api/users`**
-**`/api/posts/**
+**`/api/posts`**
 
 
 ## Sources
