@@ -38,7 +38,7 @@ router.get("/:id", async (req,res)=>{
     try{
         const user = User.findUserById(req.params.id);
 
-        res.status(200).json(user),
+        res.status(200).json(user);
 
     } catch (err){
         res.status(500).json(err);
