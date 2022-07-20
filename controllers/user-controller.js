@@ -64,7 +64,6 @@ select:"-__v",
 
 // add friends to friend list
 
-
 // remove friend from friend list
 
 
