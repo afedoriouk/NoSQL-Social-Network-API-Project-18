@@ -37,7 +37,21 @@ router.delete("/:id", async(req,res)=>{
         await post.deleteOne({set:req.body});
         res.status(200).json("post has been deleted")
     }else{
-        res.status(404).json("")
+        res.status(404).json("deleted")
     }
     }
 );
+
+//get a post using get method
+
+router.get("/:id", async(req,res)=>{
+    try{
+        const post = await Post.findPostById(req.params.id);
+        res.status(200).json(post);
+
+    }catch(err){
+        res.status(500).json(err);
+    }
+})
+
+module.exports=router;
