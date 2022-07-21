@@ -86,7 +86,7 @@ getAllUser(req, res) ;{
     User.findOneAndUpdate(
       { _id: params.userId },
       { $addToSet: { friends: params.friendId } },
-      { new: true, runValidators: true }
+      
     )
       .then((userDataDb) => {
         if (!userDataDb) {
@@ -98,21 +98,7 @@ getAllUser(req, res) ;{
       .catch((err) => res.json(err));
   }
   // delete a friend
-  deleteFriend({ params }, res) ;{
-    User.findOneAndUpdate(
-      { _id: params.userId },
-      { $pull: { friends: params.friendId } },
-      { new: true }
-    )
-      .then((userDataDb) => {
-        if (!userDataDb) {
-         res.status(404).json({ message: "No user with this id!" });
-         return;
-        }
-        res.json(userDataDb);
-      })
-      .catch((err) => res.json(err));
-  }
+ 
 
 
 module.exports = userController;

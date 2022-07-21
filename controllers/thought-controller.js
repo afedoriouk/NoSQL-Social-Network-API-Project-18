@@ -13,7 +13,7 @@ const thoughtsController = {
 .populate({path:'reaction'})
 .select('-_v')
 
-      .then(thoughtsDatab => res.json(thoughtsDataDb))
+      .then(thoughtsDataDb => res.json(thoughtsDataDb))
       .catch(err => {
 
         console.log(err);
