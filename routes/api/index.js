@@ -3,7 +3,7 @@
 const router = require("express").Router();
 
 //Import all API routes
-const apiRoutes=require('./api');
+// const routes = require('./api');
 
 
 const userRoutes = require("./user-routes");

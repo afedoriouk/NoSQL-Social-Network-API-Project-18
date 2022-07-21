@@ -1,15 +1,21 @@
+//Require thoughts and users
+
 const { Thought,
   User
 } = require('../models');
 
-const thoughtController = {
+//controller for thoughts
+const thoughtsController = {
 
   // get all thoughts
-  getThoughts(req, res) {
+  getAllThoughts(req, res) {
     Thought.find({})
+.populate({path:'reaction'})
+.select('-_v')
 
-      .then(dbThoughtData => res.json(dbThoughtData))
+      .then(thoughtsDatab => res.json(thoughtsDataDb))
       .catch(err => {
+
         console.log(err);
         res.status(500).json(err);
       });
@@ -18,15 +24,9 @@ const thoughtController = {
   
   // create thought
 
-  // update thought by using ID
-  
-  // delete thought
-
-
- // remove thought id from user's `thoughts` field
-   
-  // create reaction
-
 
 }
-module.exports = thoughtController;
+module.exports = thoughtsController;
+
+
+
