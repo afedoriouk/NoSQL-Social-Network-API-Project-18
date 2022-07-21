@@ -76,8 +76,7 @@ Created Collections using MongoDB Compass
 Deployed Database using cloud.mongodb
 Screenshots in Assets folder
 
-After running NPM START command-
-> mern-server@1.0.0 start
-> node server.js
-
+After running NPM START 
+command-mern-server@1.0.0 start
+node server.js
 API server running on port 3001!
